@@ -43,7 +43,7 @@ Build an express app to help you budget by letting you...
 In terminal, make sure you're in the root of the `budgtr` folder, then...
 
   - `npm init`
-  - `npm i express express-react-views react react-dom`
+  - `npm i express express-react-views react@16 react-dom@16`
   - `touch .gitignore`
 
 Open `.gitignore` in your code editor and add `node_modules`
