@@ -7,6 +7,7 @@ class Index extends React.Component {
       <Layout>
         <table>
           {this.props.budgets.map((budget, index) => {
+            // CAN DO THIS^ BECAUSE WE PASSED the budgets object as PROPS in our server.js
             return (
               <tr>
                 <td>{budget.date}</td>

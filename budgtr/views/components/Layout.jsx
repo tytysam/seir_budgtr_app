@@ -10,7 +10,7 @@ class Layout extends React.Component {
         </head>
         <body>
           <nav>
-            <a href="/budgets">HOME</a>
+            <a href="/budgets">Go back</a>
           </nav>
           <h1>Budgtr</h1>
 

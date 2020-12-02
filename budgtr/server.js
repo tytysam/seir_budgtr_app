@@ -27,7 +27,7 @@ app.use(express.static("public"));
 // ==> /budgets
 app.get("/budgets/", (req, res) => {
   res.render("Index", {
-    budgets: budgets,
+    budgets: budgets, // THIS IS HOW WE ACCESS OUR individual budget objects in our JSX(!!!) | by passing the object budgets as our props, we can then map over the array and then look at each 'budget'
   });
 });
 
@@ -39,6 +39,11 @@ app.get("/budgets/", (req, res) => {
 
 // Route Handler | Show ==> GET ==> Presentational Route
 // ==> /budgets/:id
+app.get("/budgets/:indexOfBudgetsArray", (req, res) => {
+  res.render("Show", {
+    budget: budgets[req.params.indexOfBudgetsArray],
+  });
+});
 
 // =======================================
 //              LISTENER

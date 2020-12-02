@@ -1,5 +1,30 @@
 h1 {
   color: grey;
   font-size: 50px;
-  text-shadow: 5px 5px 10px rgba(218, 112, 214, 0.5);
+  text-shadow: 3px 3px 10px rgba(218, 112, 214, 0.5);
+  padding-top: 10px;
+}
+
+hr {
+  width: 15%;
+  position: absolute;
+  left: 10px;
+  margin: 1px;
+}
+
+.item-name {
+  color: #000000;
+  font-size: 35px;
+  text-shadow: 3px 3px 10px rgba(218, 112, 214, 0.5);
+}
+
+h2 {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 22px;
+  font-style: oblique;
+  margin-bottom: 70px;
 }
