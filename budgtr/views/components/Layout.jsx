@@ -8,7 +8,14 @@ class Layout extends React.Component {
           <title>My Budgtr App</title>
           <link rel="stylesheet" href="/css/style.css" />
         </head>
-        <body>{this.props.children}</body>
+        <body>
+          <nav>
+            <a href="/budgets">HOME</a>
+          </nav>
+          <h1>Budgtr</h1>
+
+          {this.props.children}
+        </body>
       </html>
     );
   }

@@ -5,7 +5,20 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <h1>Hello World</h1>
+        <table>
+          {this.props.budgets.map((budget, index) => {
+            return (
+              <tr>
+                <td>{budget.date}</td>
+                <td>
+                  <a href={`/budgets/${index}`}>{budget.name}</a>
+                </td>
+                <td>{budget.from}</td>
+                <td>{budget.amount}</td>
+              </tr>
+            );
+          })}
+        </table>
       </Layout>
     );
   }

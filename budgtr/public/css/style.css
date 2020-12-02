@@ -1,3 +1,5 @@
 h1 {
-  color: rebeccapurple;
+  color: grey;
+  font-size: 50px;
+  text-shadow: 5px 5px 10px rgba(218, 112, 214, 0.5);
 }
