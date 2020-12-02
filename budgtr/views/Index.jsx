@@ -1,17 +1,12 @@
 const React = require("react");
+const Layout = require("./components/Layout.jsx");
 
 class Index extends React.Component {
   render() {
     return (
-      <html>
-        <head>
-          <title>My Budgtr App</title>
-          <link rel="stylesheet" href="/css/style.css" />
-        </head>
-        <body>
-          <h1>Hello World</h1>
-        </body>
-      </html>
+      <Layout>
+        <h1>Hello World</h1>
+      </Layout>
     );
   }
 }
