@@ -3,16 +3,32 @@ h1 {
   font-size: 50px;
   text-shadow: 3px 3px 10px rgba(218, 112, 214, 0.5);
   padding-top: 10px;
+  position: relative;
+  left: 12%;
+}
+
+.new-item {
+  color: rgba(218, 112, 214, 0.75);
+  text-shadow: 3px 3px 10px rgba(218, 112, 214, 0.5);
+
+  position: relative;
+  left: 12%;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.new-item-link {
+  text-decoration: none;
 }
 
 hr {
-  width: 15%;
+  width: 300px;
   position: absolute;
-  left: 10px;
-  margin: 1px;
+  left: 6%;
+  margin: 0px;
 }
 
-.item-name {
+.subtitle {
   color: #000000;
   font-size: 35px;
   text-shadow: 3px 3px 10px rgba(218, 112, 214, 0.5);
@@ -27,4 +43,15 @@ h3 {
   font-size: 22px;
   font-style: oblique;
   margin-bottom: 70px;
+}
+
+form {
+  display: flex;
+  width: 20vw;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  padding: 8px;
 }

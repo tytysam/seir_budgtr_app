@@ -7,7 +7,7 @@ class Show extends React.Component {
     return (
       <Layout>
         <hr></hr>
-        <h1 className="item-name">{budget.name}</h1>
+        <h1 className="subtitle">{budget.name}</h1>
         <h2>DATE:</h2>
         <h3>{budget.date}</h3>
         <h2>FROM:</h2>

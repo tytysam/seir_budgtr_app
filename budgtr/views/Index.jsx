@@ -5,6 +5,9 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
+        <a href="/budgets/new" className="new-item-link">
+          <p className="new-item">(add a new item...)</p>
+        </a>
         <table>
           {this.props.budgets.map((budget, index) => {
             // CAN DO THIS^ BECAUSE WE PASSED the budgets object as PROPS in our server.js

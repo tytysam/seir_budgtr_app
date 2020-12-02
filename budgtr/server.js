@@ -33,9 +33,16 @@ app.get("/budgets/", (req, res) => {
 
 // Route Handler | New ==> GET ==> Presentational Route
 // ==> /budgets/new
+app.get("/budgets/new", (req, res) => {
+  res.render("New");
+});
 
 // Route Handler | Create ==> POST ==> Functional Route
 // ==> /budgets
+app.post("/budgets/", (req, res) => {
+  budgets.push(req.body); // then push our data to our model
+  res.redirect("/budgets/"); // then redirect the user to the index
+});
 
 // Route Handler | Show ==> GET ==> Presentational Route
 // ==> /budgets/:id
