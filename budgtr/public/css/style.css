@@ -21,6 +21,11 @@ h1 {
   text-decoration: none;
 }
 
+.money-display {
+  position: relative;
+  left: 7%;
+}
+
 hr {
   width: 300px;
   position: absolute;

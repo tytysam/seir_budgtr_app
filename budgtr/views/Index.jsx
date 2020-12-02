@@ -8,6 +8,9 @@ class Index extends React.Component {
         <a href="/budgets/new" className="new-item-link">
           <p className="new-item">(add a new item...)</p>
         </a>
+        <h2 className="money-display">
+          Currently in the bank: {this.props.totalMoney}
+        </h2>
         <table>
           {this.props.budgets.map((budget, index) => {
             // CAN DO THIS^ BECAUSE WE PASSED the budgets object as PROPS in our server.js
